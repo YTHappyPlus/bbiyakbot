@@ -1,11 +1,13 @@
 import asyncio
 import discord
 import datetime
+import os
 
 client = discord.Client()
 
 # 1-6에서 생성된 토큰을 이곳에 입력해주세요.
-token = "NjI4MjEwNDc4MjM3MDg5Nzky.XZH-lg.N0X-jRecQWHNToD4FHne1_YLx6s"
+access_token = os.environ["BOT_TOKEN"]
+token = "acces_token"
 
 # 봇이 구동되었을 때 동작되는 코드입니다.
 @client.event
